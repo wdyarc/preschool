@@ -1,0 +1,121 @@
+body {
+    background-image: url("../../assets/img/bg.png");
+    background-color: #FFC3E0;
+    background-size: 1380px;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.huruf img{
+    width:170px;
+}
+
+.ha{
+    margin: 30px;
+    position: absolute;
+    top: 22%;
+    left: 10%;
+}
+
+.hb{
+    margin: 30px;
+    position: absolute;
+    top: 22%;
+    left: 30%;
+}
+.hc{
+    margin: 30px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+}
+.hd{
+    margin: 30px;
+    position: absolute;
+    top: 22%;
+    right: 10%;
+}
+.he{
+    margin: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
+}
+.hf{
+    margin: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
+}
+.hg{
+    margin: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 20%;
+}
+
+.kembali{
+    margin: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kembali img{
+    width: 150px;
+    vertical-align: left;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.kembali img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.judul{
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 37%;
+}
+
+.judul img{
+    width: 300px;
+    vertical-align: right;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.judul img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.lanjut{
+    margin: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.lanjut img{
+    width: 150px;
+    vertical-align: right;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.lanjut img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}

@@ -1,0 +1,144 @@
+body {
+    background-image: url("../../assets/img/bg.png");
+    background-color: #ffffff;
+    background-size: 1380px;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.kembali{
+    margin: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kembali img{
+    width: 150px;
+    vertical-align: left;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.kembali img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.nol{
+    margin: 30px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.satu img{
+    width: 75px;
+}
+.satu{
+    margin: 30px;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+}
+.dua img{
+    width: 110px;
+}
+.dua{
+    margin: 30px;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+.tiga img{
+    width: 80px;
+}
+.tiga{
+    margin: 30px;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+}
+.empat img{
+    width: 110px;
+}
+.empat{
+    margin: 30px;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+}
+.nol img{
+    width: 100px;
+}
+
+
+.judul{
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 37%;
+}
+
+.judul img{
+    width: 300px;
+    vertical-align: right;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.judul img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.selesai{
+    margin: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.selesai img{
+    width: 150px;
+    vertical-align: right;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+.selesai img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.lanjut{
+    margin: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.lanjut img{
+    width: 150px;
+    vertical-align: right;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.lanjut img:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
