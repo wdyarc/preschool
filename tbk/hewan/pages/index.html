@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tebak Gambar - 1 - Hewan</title>
+
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&family=Reenie+Beanie&family=Signika:wght@300&display=swap" rel="stylesheet">
+
+  <!-- ANIMATIONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <a href="../../tbk.html" class="kembali">
+        <img src="../../../assets/img/back.png">
+    </a>
+
+    <a href="index.html" class="judul animate__animated animate__pulse animate__repeat-3">
+        <img src="assets/img/TEBAK GAMBAR.png">
+    </a>
+
+    <a href="../../../index.html" class="info">
+        <img src="../../../assets/img/home.png">
+    </a>
+        
+    <section class="quiz-container">
+        <div class="image-container gbr animate__animated animate__pulse">
+            <img src="assets/h1/image 1.png" alt="Image Description">
+        </div>
+    
+        <div class="content-container">
+            <h1 class="subq">Hewan Apakah Aku?</h1>
+            
+            <div class="tombol">
+                
+                <a class="cc benar animate__animated" onclick="showPopup('Benar')">
+                    <img src="assets/h1/Group 11.png" alt="Option 1">
+                </a>
+                <a class="cc salah animate__animated" onclick="showPopup('Salah')">
+                    <img src="assets/h1/Group 13.png" alt="Option 2">
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Popup for Correct Answer -->
+<div id="popup-benar" class="popup">
+    <div class="overlay" onclick="closePopup()"></div>
+    <div class="popup-content">
+        <img src="assets/img/apresiasi.png" alt="Popup Image">
+        <p id="popup-text-benar">Selamat! Jawaban Anda benar.</p>
+        <button id="popup-button-benar" onclick="closePopup()">OK</button>
+        <button id="lanjut-button-benar" onclick="lanjut()">
+            <img class="pp" src="assets/img/lanjut.png" alt="Lanjut Image">
+        </button>
+    </div>
+</div>
+
+<!-- Popup for Incorrect Answer -->
+<div id="popup-salah" class="popup">
+    <div class="overlay" onclick="closePopup()"></div>
+    <div class="popup-content">
+        <img src="assets/img/salah.png" alt="Popup Image">
+        <p id="popup-text-salah">Oops! Your answer is incorrect.</p>
+        <button id="popup-button-salah" onclick="closePopup()">OK</button>
+        <button id="ulang-button" onclick="ulang()">
+            <img class="pp" src="assets/h1/Group 27.png" alt="Ulangi Image">
+        </button>
+    </div>
+</div>
+
+
+   
+         
+    <script src="script.js"></script>
+</body>
+</html>
