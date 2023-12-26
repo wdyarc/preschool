@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BelajarPrasekolah</title>
+
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&family=Reenie+Beanie&family=Signika:wght@300&display=swap" rel="stylesheet">
+
+  <!-- ANIMATIONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <main>
+        <div id="tombol">
+                <a href="htg/htg.html" class="animate__animated animate__heartBeat animate__repeat-3" >
+                    <button class="hitung">
+                        <img class="logo1" src="assets/img/htg.png">
+                        <label class="hitunglbl">BERHITUNG</label>
+                    </button>
+                </a>
+                <a href="tbk/tbk.html" class="animate__animated animate__heartBeat animate__repeat-3" >
+                    <button href="tbk/tbk.html"  class="tbk">
+                        <img class="logo3" src="assets/img/green bird.png">
+                        <label class="tbklbl">TEBAK GAMBAR</label>
+                    </button>
+                </a>
+                <a href="alpha/page1/alpha.html" class="animate__animated animate__heartBeat animate__repeat-3" >
+                    <button class="abc">
+                        <img class="logo2" src="assets/img/abc.png">
+                        <label class="abclbl">ALPHABET</label>
+                    </button>
+                </a>
+                <a href="#" class="info" onclick="showPopup()">
+                    <img src="assets/img/about.png">
+                </a>
+            
+        </div>
+
+        
+    </main>   
+    <div id="overlay" class="overlay" onclick="hidePopup()"></div>
+    <div id="popup" class="popup">
+        <!-- Only an image in the pop-up -->
+        <img src="assets/img/info.png" alt="Popup Image">
+    </div>
+
+    <script>
+        function showPopup() {
+            // Show the overlay and pop-up
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function hidePopup() {
+            // Hide the overlay and pop-up
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>

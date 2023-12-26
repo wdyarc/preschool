@@ -1,0 +1,123 @@
+body {
+    background-image: url("assets/img/gambar.png");
+    background-color: #91E4F4;
+    background-size: 1380px;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+    font-family: 'poppins', cursive; 
+}
+
+.info{
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.info img{
+    width:60px;
+}
+#tombol {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 500px;
+    font-size: 20px;
+}
+
+.abc{
+ width: 300px;
+ height: 80px;
+ font-size: 25px;
+ border-radius: 30px;
+ background-color: #A8F387;
+ font-weight: bolder;
+}
+
+.hitunglbl,
+.abclbl{
+    vertical-align: middle;
+}
+.hitung{
+ width: 320px;
+ height: 80px;
+ font-size: 25px;
+ border-radius: 100px;
+ background-color: #FFC041;
+ font-weight: bolder;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.tbk{
+    width: 280px;
+    height: 80px;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: #FF63AF;
+    font-weight: bolder;
+}
+
+.logo1,
+.logo2{
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.logo3{
+    position: absolute;
+    width: 80px;
+    bottom: 55px;
+    left: 230px;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a2a2a2;
+    color:white;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.popup img {
+    width: 420px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
