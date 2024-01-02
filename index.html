@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>BelajarPrasekolah</title>
+   
 
     <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&family=Reenie+Beanie&family=Signika:wght@300&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
   <!-- ANIMATIONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <main>
+
+        <div class="toggle-container" onclick="toggleAudio()">
+            <i class="toggle-icon uil uil-volume-mute"></i>
+            <div class="toggle-text">Music On!</div>
+        </div>
+
+        <audio id="audio" style="display: none">
+            <source src="assets/home.m4a" type="audio/mp3">
+        </audio>
+
         <div id="tombol">
                 <a href="htg/htg.html" class="animate__animated animate__pulse animate__repeat-3" >
                     <button class="hitung">
@@ -60,6 +73,26 @@
             // Hide the overlay and pop-up
             document.getElementById("overlay").style.display = "none";
             document.getElementById("popup").style.display = "none";
+        }
+
+        var audio = document.getElementById('audio');
+        var toggleContainer = document.querySelector('.toggle-container');
+        var toggleText = document.querySelector('.toggle-text');
+        var toggleIcon = document.querySelector('.toggle-icon');
+
+        function toggleAudio() {
+            // Cek apakah audio sedang dimainkan
+            if (audio.paused) {
+                audio.play(); // Jika sedang di-pause, mainkan
+                toggleText.textContent = 'Music Off!';
+                toggleIcon.classList.remove('uil-volume-mute');
+                toggleIcon.classList.add('uil-volume-up');
+            } else {
+                audio.pause(); // Jika sedang dimainkan, hentikan
+                toggleText.textContent = 'Music On!';
+                toggleIcon.classList.remove('uil-volume-up');
+                toggleIcon.classList.add('uil-volume-mute');
+            }
         }
     </script>
 </body>
