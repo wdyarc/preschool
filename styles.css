@@ -121,3 +121,33 @@ button:hover {
     width: 420px; /* Set the width of the image */
     height: auto; /* Maintain aspect ratio */
 }
+
+.toggle-container {
+    position: absolute;
+    display: flex;
+    align-items: center;    
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    top: 10px; 
+    left: 10px;
+    
+}
+
+.toggle-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-text {
+    color: #000;
+    margin-left: 10px;
+    font-weight: bold;
+}
